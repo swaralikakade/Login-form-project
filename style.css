@@ -1,0 +1,134 @@
+@import url('https://fonts.google.com/specimen/Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    width: 25rem;
+    border-radius: 10px;
+    padding: 5em 2rem;
+    box-shadow: 0px 0px 20px 0px black;
+    border: 1px solid white;
+    background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+}
+
+
+.login-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.userName ,
+.Password {
+
+    text-align: center;
+    border: 3px solid white;
+    margin: 1rem;
+    color:white;
+    background: transparent;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    width: 15rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.userName:focus,
+.Password:focus {
+    width: 20rem;
+    animation-name: colorChange;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        border-color: rgb(230, 121, 252);
+        color:rgb(230, 121, 252) ;
+    }
+
+    10% {
+        border-color: rgb(236, 85, 130);
+        color:  rgb(236, 85, 130);
+    }
+
+    20% {
+        border-color: hotpink;
+        color: hotpink;
+    }
+
+    30% {
+        border-color: red;
+        color: red;
+    }
+
+    40% {
+        border-color: yellow;
+        color: yellow;
+    }
+
+    
+    60% {
+        border-color: cyan;
+        color: cyan;
+    }
+
+    70% {
+        border-color: skyblue;
+        color: skyblue;
+    }
+
+    80% {
+        border-color: pink;
+        color: pink;
+    }
+
+    90% {
+        border-color: rgb(66, 230, 137);
+        color: rgb(66, 230, 137);
+    }
+
+    100% {
+        border-color: purple;
+        color: purple;
+    }
+
+}
+
+.loginBtn {
+    background: transparent;
+    border: 2px solid yellow;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+}
+
+.loginBtn:hover {
+    
+    background: rgb(249, 226, 51);
+    border: 2px solid rgb(249, 226, 51);
+}
